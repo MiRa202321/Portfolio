@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="projects-section">
+    <section class="section projects" id="projects">
+
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">My Work</h2>
+                <p class="section-subtitle">
+                    Explore some of my recent works and projects.
+                </p>
+            </div>
+
+            <div class="projects-layout">
+                <!-- Left: Project Cards -->
+                <div class="projects-container">
+
+                    <!-- AyurConnect -->
+                    <div class="project-card">
+                        <div class="project-tags">
+                            <span class="project-tag">AI/ML</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Android</span>
+                            <span class="project-tag">Random Forest</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AyurConnect</h3>
+                            <p class="project-description">
+                                A portal connecting Ayurvedic doctors with patients, featuring an ML-based health prediction model that generates personalized health scores and diet suggestions using Random Forest. Includes a basic Android app for easy access.
+                            </p>
+<!--                            <div class="project-links">-->
+<!--                                <a href="https://github.com/MiRa202321/NewsApp" class="project-link" target="_blank">-->
+<!--                                    <i class="fab fa-github"></i> View Code-->
+<!--                                </a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                    <!-- Weather App -->
+                    <div class="project-card">
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather App</h3>
+                            <p class="project-description">
+                                An Android app built with Java/Kotlin and OpenWeatherMap API, delivering real-time, location-based weather updates with a clean Material Design interface.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/MiRa202321/WeatherApp" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculator App -->
+                    <div class="project-card">
+                        <div class="project-tags">
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">Jetpack Compose</span>
+                            <span class="project-tag">MVVM</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">My Calculator</h3>
+                            <p class="project-description">
+                                A functional calculator app built with Kotlin and Jetpack Compose using MVVM architecture, featuring robust input handling and a responsive, modern UI.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/MiRa202321/CalcCompose" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gold Price Prediction -->
+                    <div class="project-card">
+                        <div class="project-tags">
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Random Forest</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Gold Price Prediction</h3>
+                            <p class="project-description">
+                                A machine learning model using Random Forest regression to predict gold prices from historical data and financial indicators, optimized through feature engineering and hyperparameter tuning.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/MiRa202321/DiabetesPrediction/blob/964128daf617bfd6e1bda7dbf1ffc3deb2f1fbea/Goldprice_prediction.ipynb#L4" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="projects-visual">
+                    <div class="about-image-container">
+                        <img src="/Images/Projects.jpeg" alt="Projects" class="projects-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>

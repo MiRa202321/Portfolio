@@ -1,58 +1,751 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" >-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Rashmi Mishra- Personal Portfolio</title>-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"-->
+<!--          integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="-->
+<!--          crossorigin="anonymous"-->
+<!--          referrerpolicy="no-referrer" />-->
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="/css/style.css?v=2">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--&lt;!&ndash;changed the link of styling&ndash;&gt;-->
+<!--     &lt;!&ndash;Loading animation&ndash;&gt;-->
+<!--<div th:replace="~{fragments/loader :: loader}"></div>-->
+
+<!--&lt;!&ndash;header&ndash;&gt;-->
+<!--     <div th:replace="~{fragments/header :: site-header}"></div>-->
+
+<!--&lt;!&ndash;hero&ndash;&gt;-->
+<!--     <div th:replace="~{fragments/hero :: hero-section}"></div>-->
+
+<!--     &lt;!&ndash; about &ndash;&gt;-->
+<!--     <div th:replace="~{fragments/about :: about-section}"></div>-->
+
+
+<!--     &lt;!&ndash; projects &ndash;&gt;-->
+<!--     <div th:replace="~{fragments/projects :: projects-section}"></div>-->
+
+<!--     &lt;!&ndash; experience &ndash;&gt;-->
+<!--     <div th:replace="~{fragments/experience :: experience-section}"></div>-->
+
+
+<!--     &lt;!&ndash; achievemnts &ndash;&gt;-->
+<!--     <div th:replace="~{fragments/achievements :: achievements-section}"></div>-->
+
+
+<!--     &lt;!&ndash; contact &ndash;&gt;-->
+<!--     <div th:replace="~{fragments/contact :: contact-section}"></div>-->
+
+<!--     &lt;!&ndash; footer &ndash;&gt;-->
+<!--     <div th:replace="~{fragments/footer :: footer-section}"></div>-->
+
+
+<!--     &lt;!&ndash;&lt;!&ndash;Background shapes&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="floating-shape shape-1"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="floating-shape shape-2"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="floating-shape shape-3"></div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;custom script file&ndash;&gt;-->
+<!--<script src="/JS/script.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--static html-->
+
+
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashmi Mishra- Personal Portfolio</title>
+    <title>Rashmi Mishra - Personal Portfolio</title>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
           integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer" />
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css?v=2">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css?v=2">
 </head>
-<body>
-
-<!--changed the link of styling-->
-     <!--Loading animation-->
-<div th:replace="~{fragments/loader :: loader}"></div>
-
-<!--header-->
-     <div th:replace="~{fragments/header :: site-header}"></div>
-
-<!--hero-->
-     <div th:replace="~{fragments/hero :: hero-section}"></div>
-
-     <!-- about -->
-     <div th:replace="~{fragments/about :: about-section}"></div>
 
 
-     <!-- projects -->
-     <div th:replace="~{fragments/projects :: projects-section}"></div>
-
-     <!-- experience -->
-     <div th:replace="~{fragments/experience :: experience-section}"></div>
-
-
-     <!-- achievemnts -->
-     <div th:replace="~{fragments/achievements :: achievements-section}"></div>
+<!-- Loader -->
+<div class="loader">
+    <!-- Copy loader HTML from fragments/loader.html here -->
+    <!DOCTYPE html>
 
 
-     <!-- contact -->
-     <div th:replace="~{fragments/contact :: contact-section}"></div>
+        <div class="loader-wrapper">
 
-     <!-- footer -->
-     <div th:replace="~{fragments/footer :: footer-section}"></div>
+            <div class="loader">
+                <div class="loader-text">R.M.</div>
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+            </div>
+        </div>
 
 
-     <!--&lt;!&ndash;Background shapes&ndash;&gt;-->
-<!--<div class="floating-shape shape-1"></div>-->
-<!--<div class="floating-shape shape-2"></div>-->
-<!--<div class="floating-shape shape-3"></div>-->
+</div>
 
-<!--custom script file-->
-<script src="/JS/script.js"></script>
+<!-- Header -->
+<header>
+    <!-- Copy header HTML from fragments/header.html here -->
+    <!DOCTYPE html>
+
+        <header class="header">
+            <div class="container header-container">
+                <div class="logo">R.<span>M.</span></div>
+                <nav class="nav">
+                    <div class="nav-links">
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#experience" class="nav-link">Education</a>
+                        <a href="#achievements" class="nav-link">Achievements</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <!-- Copy hero HTML from fragments/hero.html here -->
+
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-greeting"> Hi there, I'm</div>
+                    <h1 class="hero-title"><span class="gradient-text">Rashmi</span></h1>
+                    <h2 class="hero-subtitle">Android Developer(Native), DSA with Java</h2>
+                    <p class="hero-description">
+                        Passionate engineer driven by curiosity and creativity. I thrive on solving real-world problems with clean and scalable solutions. Always exploring; always building — that’s how I grow.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Get In Touch
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="tel: +916306333830" class="social-link">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="mail to: rmwk789@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rashmi-mishra-26732a261/"target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/MiRa202321" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-visual-inner">
+                        <div class="hero-visual-frame">
+                            <img src="/Images/profile.jpg" alt="profile" style="width: 90%; height: 90%; object-fit: cover; border-radius: 15px">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-indicator-line">
+                    <div class="scroll-indicator-dot"></div>
+                </div>
+            </div>
+        </section>
+
+</section>
+
+<!-- About Section -->
+
+    <!-- Copy about HTML from fragments/about.html here -->
+
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-title-container">
+
+                </div>
+                <div class="about-container">
+                    <h2 class="section-title">About Me</h2>
+                    <!--                <p class="section-subtitle">-->
+                    <!--                    Get to know me, my education and my backgorund.-->
+                    <!--                </p>-->
+                </div>
+                <div class="about-container">
+                    <div class="about-content">
+                        <!--                    <div class="about-tagline">My background</div>-->
+                        <h3 class="about-heading">A learner at heart; An engineer in action</h3>
+                        <p class="about-text" >I’m Rashmi, a Computer Science and Artificial Intelligence undergraduate at KIET Group of Institutions, graduating in 2026 with a strong academic foundation (GPA: 8.7). Over the past few years, I’ve cultivated my skills across multiple domains — from Java, Kotlin, SQL and Python. My journey has been hands-on: I’ve developed Android applications, data-driven ML models and end-to-end projects that merge technology with real-world problem-solving.</p>
+                        <p class="about-text" >I thrive on building solutions that are both practical and impactful. Some of my key projects include AyurConnect, a platform connecting Ayurvedic doctors and patients with integrated health prediction models; a Gold Price Prediction system using Random Forest regression; and several Android applications such as a Weather App and Calculator App built with Kotlin and Jetpack Compose. Each of these projects deepened my understanding of how technologies like APIs, databases and scalable architectures come together to create meaningful applications.</p>
+                        <p class="about-text" >Beyond technical work, I actively contribute to my campus community as a Core Lead at Innogeeks Club, where I organize events, bootcamps and collaborative projects. These experiences strengthened my leadership, teamwork and communication skills. I’m also continuously expanding my toolkit, having explored Spring Boot, Tableau and AWS. I’m eager to grow as a native android developer and to apply my skills at the exciting intersection of technology and data-driven insights.</p>
+
+                        <!--                    Skills-->
+                        <div class="skills-container">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-name">Java</div>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-android"></i> <!-- Kotlin doesn't have an official FA logo -->
+                                </div>
+                                <div class="skill-name">Kotlin</div>
+                            </div>
+
+
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-name">Spring Boot</div>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-android"></i>
+                                </div>
+                                <div class="skill-name">Android Development</div>
+                            </div>
+
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-name">SQL</div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fa-solid fa-server"></i>
+                                </div>
+                                <div class="skill-name">Oracle</div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fa-solid fa-cloud"></i>
+                                </div>
+                                <div class="skill-name">AWS</div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fa-solid fa-code-branch"></i>
+                                </div>
+                                <div class="skill-name">Git</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="about-image-container">
+                            <div class="about-image-bg"></div>
+                            <img src="/Images/About.jpeg" alt="about" class="about-image">
+                        </div>
+                        <div class="about-decorations">
+                            <div class="about-decoration"></div>
+                            <div class="about-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Projects Section -->
+
+    <!-- Copy projects HTML from fragments/projects.html here -->
+
+        <section class="section projects" id="projects">
+
+            <div class="container">
+                <div class="section-title-container">
+                    <h2 class="section-title">My Work</h2>
+                    <p class="section-subtitle">
+                        Explore some of my recent works and projects.
+                    </p>
+                </div>
+
+                <div class="projects-layout">
+                    <!-- Left: Project Cards -->
+                    <div class="projects-container">
+
+                        <!-- AyurConnect -->
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">AI/ML</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Android</span>
+                                <span class="project-tag">Random Forest</span>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">AyurConnect</h3>
+                                <p class="project-description">
+                                    A portal connecting Ayurvedic doctors with patients, featuring an ML-based health prediction model that generates personalized health scores and diet suggestions using Random Forest. Includes a basic Android app for easy access.
+                                </p>
+                                <!--                            <div class="project-links">-->
+                                <!--                                <a href="https://github.com/MiRa202321/NewsApp" class="project-link" target="_blank">-->
+                                <!--                                    <i class="fab fa-github"></i> View Code-->
+                                <!--                                </a>-->
+                                <!--                            </div>-->
+                            </div>
+                        </div>
+
+                        <!-- Weather App -->
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">API</span>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Weather App</h3>
+                                <p class="project-description">
+                                    An Android app built with Java/Kotlin and OpenWeatherMap API, delivering real-time, location-based weather updates with a clean Material Design interface.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/MiRa202321/WeatherApp" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Calculator App -->
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">Jetpack Compose</span>
+                                <span class="project-tag">MVVM</span>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">My Calculator</h3>
+                                <p class="project-description">
+                                    A functional calculator app built with Kotlin and Jetpack Compose using MVVM architecture, featuring robust input handling and a responsive, modern UI.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/MiRa202321/CalcCompose" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gold Price Prediction -->
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Random Forest</span>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Gold Price Prediction</h3>
+                                <p class="project-description">
+                                    A machine learning model using Random Forest regression to predict gold prices from historical data and financial indicators, optimized through feature engineering and hyperparameter tuning.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/MiRa202321/DiabetesPrediction/blob/964128daf617bfd6e1bda7dbf1ffc3deb2f1fbea/Goldprice_prediction.ipynb#L4" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Image -->
+                    <div class="projects-visual">
+                        <div class="about-image-container">
+                            <img src="/Images/Projects.jpeg" alt="Projects" class="projects-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</section>
+
+<!-- Experience Section -->
+
+    <!-- Copy experience HTML from fragments/experience.html here -->
+
+        <section class="section experience" id="experience">
+            <div class="container">
+                <!-- Section Heading -->
+                <div class="section-title-container">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">
+                        My professional journey and personal background
+                    </p>
+                </div>
+
+                <!-- Timeline -->
+                <div class="timeline">
+
+                    <!-- 10th -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2018</div>
+                            <h3 class="timeline-title">10th Grade</h3>
+                            <h4 class="timeline-subtitle">Subjects: Computer Science & Mathematics</h4>
+                            <p class="timeline-description">
+                                Built a strong foundation in programming logic and problem-solving.
+                                Developed early interest in computational thinking and analytical skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 12th -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020</div>
+                            <h3 class="timeline-title">12th Grade</h3>
+                            <h4 class="timeline-subtitle">Specialization: Computer Science (Java)</h4>
+                            <p class="timeline-description">
+                                Studied Java as a core subject and implemented academic projects.
+                                Enhanced problem-solving and OOP concepts through practical coding.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- B.Tech -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - Present</div>
+                            <h3 class="timeline-title">B.Tech CSE (AI Specialization)</h3>
+                            <h4 class="timeline-subtitle">8.7 CGPA till 5th Semester</h4>
+                            <p class="timeline-description">
+                                Gained expertise in data structures, algorithms, and AI concepts.
+                                Engaged in projects integrating AI, Java, and full-stack development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Java Developer -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - Present</div>
+                            <h3 class="timeline-title">Java Developer</h3>
+                            <h4 class="timeline-subtitle">Independent Learning & Projects</h4>
+                            <p class="timeline-description">
+                                Started Java development in 1st year and built strong backend skills.
+                                Worked on projects using OOP, Spring Boot, and problem-solving.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Innogeeks -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - Present</div>
+                            <h3 class="timeline-title">Innogeeks Club</h3>
+                            <h4 class="timeline-subtitle">Member → Core Member(Content Lead) → Core Lead (Club Admin)</h4>
+                            <p class="timeline-description">
+                                Planned and managed technical events, bootcamps, and projects.
+                                Promoted collaboration, innovation, and knowledge sharing in the club.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Android Dev -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-brands fa-android"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mid 2024 - Present</div>
+                            <h3 class="timeline-title">Android Developer (Kotlin)</h3>
+                            <h4 class="timeline-subtitle">Mobile Development</h4>
+                            <p class="timeline-description">
+                                Developing Android apps using Kotlin with focus on clean UI and performance.
+                                Applying modern Android frameworks and best practices in projects.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+<!-- Achievements Section -->
+
+    <!-- Copy achievements HTML from fragments/achievements.html here -->
+
+        <section class="section achievements" id="achievements">
+            <div class="container">
+                <div class="section-title-container">
+                    <h2 class="section-title">Achievements</h2>
+                    <p class="section-subtitle">
+                        Recognitions and Ceritfications I have achieved.
+                    </p>
+                </div>
+                <div class="achievements-container">
+                    <!-- Wells Fargo -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="achievement-title">Wells Fargo – Software Engineering (Forage)</h3>
+                        <p class="achievement-description">
+                            I completed practical tasks simulating real-world engineering work at Wells Fargo, gaining exposure to software development workflows, version control, and collaborative coding practices.
+                        </p>
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/nkmk7gJitYs4TBvoA/9Wvq4L2WCFQDyyPp3_nkmk7gJitYs4TBvoA_xMfnkiT97XN4QpyBe_1755105679905_completion_certificate.pdf"
+                           class="cert-link" target="_blank">
+                            <span>View Certificate</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- JP Morgan Chase -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="achievement-title">JP Morgan Chase & Co. – Software Engineering (Forage)</h3>
+                        <p class="achievement-description">
+                            I worked on simulated investment banking technology tasks, including financial data visualization and backend systems, strengthening my skills in full-stack development and problem-solving.
+                        </p>
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_xMfnkiT97XN4QpyBe_1756030337784_completion_certificate.pdf"
+                           class="cert-link" target="_blank">
+                            <span>View Certificate</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Walmart -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="achievement-title">Walmart USA – Advanced Software Engineering (Forage)</h3>
+                        <p class="achievement-description">
+                            I took on real-world inspired challenges in advanced software engineering, focusing on building scalable systems and applying problem-solving techniques used in large-scale enterprise projects.
+                        </p>
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/prBZoAihniNijyD6d/oX6f9BbCL9kJDJzfg_prBZoAihniNijyD6d_xMfnkiT97XN4QpyBe_1756145423087_completion_certificate.pdf"
+                           class="cert-link" target="_blank">
+                            <span>View Certificate</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+<!-- Contact Section -->
+
+    <!-- Copy contact HTML from fragments/contact.html here -->
+
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-title-container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Have a project in mind? Want to collaborate? Let's Connect!
+                    </p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3 class="contact-heading">Let's build something together!</h3>
+                        <p class="contact-text">
+                            I am always open to new collaborations and opportunities. Let me know if I can be of any help. :)
+                        </p>
+                        <div class="contact-links">
+                            <a href="tel: +916306333830" class="contact-link">
+                                <div class="contact-link-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-link-text">
+                                    <span class="contact-link-label">Phone</span>
+                                    <span class="contact-link-value">+91 6306333830</span>
+                                </div>
+                            </a>
+                            <a href="rmwk789@gmail.com" class="contact-link">
+                                <div class="contact-link-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-link-text">
+                                    <span class="contact-link-label">Email</span>
+                                    <span class="contact-link-value">rmwk789@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rashmi-mishra-26732a261/" target="_blank" class="contact-link">
+                                <div class="contact-link-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-link-text">
+                                    <span class="contact-link-label">LinkedIn</span>
+                                    <span class="contact-link-value">Rashmi Mishra</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/MiRa202321" target="_blank" class="contact-link">
+                                <div class="contact-link-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-link-text">
+                                    <span class="contact-link-label">Github</span>
+                                    <span class="contact-link-value">rashmishra</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="caa9d659-d9e9-447d-b042-60dc4af6d8fb">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Radhe Shyam">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="rs124@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" name="message" id="message" placeholder="Type your message here"></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<!-- Footer -->
+
+    <!-- Copy footer HTML from fragments/footer.html here -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">Rashmi</a>
+                        <p class="footer-text">
+                            Turning ideas into code. Building, learning and exploring one project at a time.
+                        </p>
+                        <div class="footer-social">
+                            <a href="tel: +91 6306333830" class="social-link">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a href="mailto:rmwk789@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rashmi-mishra-26732a261/" class="social-link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/MiRa202321" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links-container">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <div class="footer-links">
+                            <a href="#home" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> Home
+                            </a>
+                            <a href="#about" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> About
+                            </a>
+                            <a href="#projects" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> My Work
+                            </a>
+                            <a href="#experience" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> Education
+                            </a>
+                            <a href="#achievements" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> Achievements
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links-container">
+                        <h3 class="footer-heading">Socials</h3>
+                        <div class="footer-links">
+                            <a href="https://www.linkedin.com/in/rashmi-mishra-26732a261/" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/MiRa202321" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> Github
+                            </a>
+                            <a href="https://codeforces.com/profile/Rashmim" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> Codeforces
+                            </a>
+                            <a href="https://www.geeksforgeeks.org/user/rashmi8ksv/" class="footer-link">
+                                <i class="fas fa-chevron-right"></i> GFG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy 2025 Rashmi Mishra. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+
+<!-- Custom JS -->
+<script src="JS/script.js"></script>
 </body>
 </html>

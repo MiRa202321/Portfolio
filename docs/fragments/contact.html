@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="contact-section">
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Have a project in mind? Want to collaborate? Let's Connect!
+                </p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's build something together!</h3>
+                    <p class="contact-text">
+                        I am always open to new collaborations and opportunities. Let me know if I can be of any help. :)
+                    </p>
+                    <div class="contact-links">
+                        <a href="tel: +916306333830" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">Phone</span>
+                                <span class="contact-link-value">+91 6306333830</span>
+                            </div>
+                        </a>
+                        <a href="rmwk789@gmail.com" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">rmwk789@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rashmi-mishra-26732a261/" target="_blank" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">Rashmi Mishra</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/MiRa202321" target="_blank" class="contact-link">
+                            <div class="contact-link-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-link-text">
+                                <span class="contact-link-label">Github</span>
+                                <span class="contact-link-value">rashmishra</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="caa9d659-d9e9-447d-b042-60dc4af6d8fb">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Radhe Shyam">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="rs124@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" name="message" id="message" placeholder="Type your message here"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>

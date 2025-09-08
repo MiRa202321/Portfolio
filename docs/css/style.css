@@ -29,6 +29,9 @@ body{
   background: var(--darker-color);
     color: var(--text-color);
 
+  margin: 0;
+  padding: 0;
+
     line-height: 1.6;
     overflow-y: auto;
    /* min-height: 100vh;*/

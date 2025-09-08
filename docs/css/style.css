@@ -33,6 +33,7 @@ body {
   overflow-x: hidden; /* prevent horizontal scroll */
   overflow-y: auto;   /* allow vertical scroll */
   min-height: 100vh;
+   box-sizing: border-box;
 }
 
 
@@ -157,6 +158,9 @@ transition: all 0.3s ease;
         left: 0;
         z-index: 100;
         transition: all 0.3s ease;
+          margin-bottom: 0;
+          padding-bottom: 0;
+
     }
 
     .header.scrolled{

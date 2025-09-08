@@ -23,29 +23,17 @@
     color: var(--light-color);
 }
 
-body{
-   font-family: 'Urbanist', sans-serif;
-  /* background: linear-gradient(180deg, #0a0a16 0%, #050510 100%) !important;*/
-  background: var(--darker-color);
-    color: var(--text-color);
-
-  margin: 0;
-  padding: 0;
-
-    line-height: 1.6;
-    overflow-y: auto;
-   /* min-height: 100vh;*/
-}
-
 body {
   font-family: 'Urbanist', sans-serif;
   background: var(--darker-color) !important;
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
-  overflow-x: hidden;
-
+  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-y: auto;   /* allow vertical scroll */
+  min-height: 100vh;
 }
-
 
 
 h1,h2,h3,h4,h5,h6{
